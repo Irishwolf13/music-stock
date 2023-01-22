@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // Going with new Routes instead of old "Switch"
 import Home from "./Home.js"
 import Search from "./Search.js"
 import Portfolio from "./Portfolio.js"
