@@ -1,0 +1,10 @@
+nav a:hover,
+nav a:active {
+  color: tomato;
+  border-bottom: 2px solid tomato;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
