@@ -5,10 +5,12 @@ import Search from "./Search.js"
 import Portfolio from "./Portfolio.js"
 import NotFound from "./NotFound.js"
 import NavBar from "./NavBar.js"
+import Button from "@mui/material/Button";
 
 function App() {
   return (
     <div>
+      {/* <Button variant="contained">Hi Mom</Button> */}
       <NavBar />
       <Routes>
         <Route path="/search" element={<Search />}></Route>
