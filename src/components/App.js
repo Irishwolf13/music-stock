@@ -5,6 +5,7 @@ import Search from "./Search.js"
 import Portfolio from "./Portfolio.js"
 import NotFound from "./NotFound.js"
 import NavBar from "./NavBar.js"
+import logo from "./stockify.png"
 
 function App() {
   const [rawData, setRawData] = useState([]);
@@ -36,9 +37,8 @@ function App() {
 
   return (
     <div className="mainContainer">
-      
-      {/* <div className="circle">Cirlce</div> */}
-      <div className="titleBar">Title</div>
+      <img className="stockifyLogo"alt="timer" src={logo} />
+      <div className="titleBar"></div>
       <div className="mainArea">
         <div className="sideBar">
           <NavBar />
