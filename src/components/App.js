@@ -14,19 +14,6 @@ function App() {
     .then(Data => setRawData(Data))
 },[])
 
-// useEffect(() => {
-//   fetch("https://api.chartmetric.com/api/artist/3380/artist-rank?metric=fs_likes", {
-//     method: "GET",
-//     mode: 'no-cors',
-//     headers: {
-//         'Content-Type': 'application/json',
-//         'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzA2MDA1NSwidGltZXN0YW1wIjoxNjc0NTI1MDQ2MDg3LCJpYXQiOjE2NzQ1MjUwNDYsImV4cCI6MTY3NDUyODY0Nn0.TeSwh2DRELqDnidEyIHPj7o9Q2fnkXN_GZFl9ZbGN0o'
-//     }
-//   })
-//   .then(res => res.json())                        
-//   .then(returnData => console.log(returnData)) 
-// },[])
-
   return (
     <div className="mainContainer">
       
