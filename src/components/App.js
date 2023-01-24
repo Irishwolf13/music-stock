@@ -15,6 +15,25 @@ function App() {
     .then(Data => setRawData(Data))
 },[])
 
+  const [search, setSearch] = useState('')
+  const filterRawData = rawData.filter(item => item.artist_names[0].toLowerCase().includes(search.toLowerCase()))
+  const handleSearch = (e) => {
+    setSearch(e.target.value)
+  } 
+
+  const handleArtistClicked = (id) => {
+    const myData = (rawData.find(item => item.id === id))
+    fetch("http://localhost:7001/artists", {
+      method: "POST",
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(myData)
+    })
+    .then(res => res.json())                        
+    .then(returnData => console.log(returnData)) 
+  }
+
   return (
     <div className="mainContainer">
       
@@ -26,9 +45,23 @@ function App() {
         </div>
         <div>
         <Routes>
-            <Route path="/search" element={<Search />}></Route>
+            <Route 
+              path="/search" 
+              element={<Search 
+                search={search} 
+                handleSearch={handleSearch} 
+                rawData={ filterRawData } 
+                handleArtistClicked={handleArtistClicked}
+              />}>
+            </Route>
             <Route path="/portfolio" element={<Portfolio />}></Route>
-            <Route path="/" element={<Home rawData={ rawData } />}></Route>
+            <Route 
+              path="/" 
+              element={<Home 
+                rawData={ rawData } 
+                handleArtistClicked={handleArtistClicked}
+              />}>
+            </Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </div>

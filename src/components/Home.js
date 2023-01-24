@@ -1,25 +1,14 @@
 import Card from './Card.js'
 import React, { useState } from 'react'
 
-function Home({ rawData }) {
+function Home({ rawData, handleArtistClicked }) {
   const [displayGenre, setDisplayGenre] = useState(false)
 
   function displayArtists() {
     setDisplayGenre(prev => !prev)
   }
 
-  const handleArtistClicked = (id) => {
-    const myData = (rawData.find(item => item.id === id))
-    fetch("http://localhost:7001/artists", {
-      method: "POST",
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(myData)
-    })
-    .then(res => res.json())                        
-    .then(returnData => console.log(returnData)) 
-  }
+  
   
     const displayItems = rawData.map(item => (
       <Card
