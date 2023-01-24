@@ -47,7 +47,7 @@ div .sideBar {
 div .mainArea {
   display: flex;
   width: 100%;
-  background-color: rgb(9, 223, 112);
+  background-color: rgb(0, 0, 0);
 }
 
 .mainContainer {
@@ -57,4 +57,17 @@ div .mainArea {
 .navLink{
   display: flex;
   font-size: 20px;
+}
+
+.coverArt {
+  width: 150px;
+}
+
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardContainer {
+  padding: 10px
 }
