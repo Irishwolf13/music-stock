@@ -1,3 +1,281 @@
 {
-  "artists": []
+  "artists": [
+    {
+      "id": 1
+    },
+    {
+      "id": 43528456,
+      "name": "Unholy (feat. Kim Petras)",
+      "isrc": "GBUM72205415",
+      "itunes_album_id": [
+        "1643168265"
+      ],
+      "itunes_track_id": "1643168566",
+      "composer_name": "Sam Smith, Kim Petras, James Napier, Ilya Salmanzadeh, Henry Walter, Blake Slatkin, Omer Fedi",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b2737de15e6e7d268466cbfc1e35",
+      "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/0b/cd/72/0bcd72b4-2569-9e48-7226-d5e68b90426d/mzaf_13878779478528471816.plus.aac.p.m4a",
+      "cm_track": 92619931,
+      "track_genre": "Pop,Musica",
+      "cm_artist": [
+        3176,
+        717311
+      ],
+      "artist_names": [
+        "Sam Smith",
+        "Kim Petras"
+      ],
+      "code2s": [
+        "GB",
+        "DE"
+      ],
+      "artist_images": [
+        null,
+        null
+      ],
+      "artist_covers": [
+        null,
+        null
+      ],
+      "itunes_artist_ids": [
+        156488786,
+        291697579
+      ],
+      "itunes_artist_names": [
+        "Sam Smith",
+        "Kim Petras"
+      ],
+      "itunes_track_ids": [
+        "1643168566"
+      ],
+      "itunes_album_ids": [
+        "1643168265"
+      ],
+      "storefronts": [
+        "IT"
+      ],
+      "album_ids": [
+        23940224
+      ],
+      "album_names": [
+        "Unholy (feat. Kim Petras)"
+      ],
+      "album_upc": [
+        "602445856756"
+      ],
+      "album_label": [
+        "EMI"
+      ],
+      "release_dates": [
+        "2022-09-22T00:00:00.000Z"
+      ],
+      "duration_ms": 157280,
+      "explicit": false,
+      "score": 0.515410659854,
+      "album": [
+        {
+          "release_date": "2022-09-22",
+          "name": "Unholy (feat. Kim Petras)",
+          "upc": "602445856756",
+          "id": 23940224,
+          "label": "EMI"
+        }
+      ],
+      "songwriter": [
+        "Sam Smith",
+        "Kim Petras",
+        "James Napier",
+        "Ilya Salmanzadeh",
+        "Henry Walter",
+        "Blake Slatkin",
+        "Omer Fedi"
+      ],
+      "spotify_popularity": 50,
+      "artists": [
+        {
+          "code2": "GB",
+          "name": "Sam Smith",
+          "id": 3176
+        },
+        {
+          "code2": "DE",
+          "name": "Kim Petras",
+          "id": 717311
+        }
+      ],
+      "rank": 1,
+      "added_at": "2023-01-01T00:00:00.000Z",
+      "code2": "US",
+      "genre": "Pop",
+      "country": "US",
+      "itunes": 43528456,
+      "velocity": 1,
+      "pre_rank": 3,
+      "peak_rank": 1,
+      "peak_date": "2022-09-24T00:00:00.000Z",
+      "time_on_chart": 120,
+      "rankStats": [
+        {
+          "rank": 8,
+          "timestp": "2022-12-25T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2022-12-26T00:00:00.000Z"
+        },
+        {
+          "rank": 3,
+          "timestp": "2022-12-27T00:00:00.000Z"
+        },
+        {
+          "rank": 3,
+          "timestp": "2022-12-28T00:00:00.000Z"
+        },
+        {
+          "rank": 3,
+          "timestp": "2022-12-29T00:00:00.000Z"
+        },
+        {
+          "rank": 3,
+          "timestp": "2022-12-30T00:00:00.000Z"
+        },
+        {
+          "rank": 3,
+          "timestp": "2022-12-31T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2023-01-01T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 45435761,
+      "name": "Escapism. (feat. 070 Shake)",
+      "isrc": "QMDA62217995",
+      "itunes_album_id": [
+        "1646318963"
+      ],
+      "itunes_track_id": "1646318967",
+      "composer_name": "Rachel Keen, Mike Sabath, Danielle Balbuena",
+      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0e/21/79/0e217970-c810-ace2-1af9-e55a1729bad9/197187076376.jpg/160x160bb.jpg",
+      "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4c/83/d0/4c83d0ed-920e-6897-4497-8e7ed41a772a/mzaf_18402932971928672931.plus.aac.p.m4a",
+      "cm_track": 94059971,
+      "track_genre": "Pop,Music",
+      "cm_artist": [
+        407402
+      ],
+      "artist_names": [
+        "RAYE"
+      ],
+      "code2s": [
+        "GB"
+      ],
+      "artist_images": [
+        null
+      ],
+      "artist_covers": [
+        null
+      ],
+      "itunes_artist_ids": [
+        261686
+      ],
+      "itunes_artist_names": [
+        "RAYE"
+      ],
+      "itunes_track_ids": [
+        "1646318967"
+      ],
+      "itunes_album_ids": [
+        "1646318963"
+      ],
+      "storefronts": [
+        "GB"
+      ],
+      "album_ids": [
+        24273374
+      ],
+      "album_names": [
+        "Escapism. / The Thrill Is Gone."
+      ],
+      "album_upc": [
+        "197187021420"
+      ],
+      "album_label": [
+        "Human Re Sources"
+      ],
+      "release_dates": [
+        "2022-10-12T00:00:00.000Z"
+      ],
+      "duration_ms": 272373,
+      "explicit": true,
+      "score": 0.113127003896,
+      "album": [
+        {
+          "release_date": "2022-10-12",
+          "name": "Escapism. / The Thrill Is Gone.",
+          "upc": "197187021420",
+          "id": 24273374,
+          "label": "Human Re Sources"
+        }
+      ],
+      "songwriter": [
+        "Rachel Keen",
+        "Mike Sabath",
+        "Danielle Balbuena"
+      ],
+      "spotify_popularity": 48,
+      "artists": [
+        {
+          "code2": "GB",
+          "name": "RAYE",
+          "id": 407402
+        }
+      ],
+      "rank": 2,
+      "added_at": "2023-01-01T00:00:00.000Z",
+      "code2": "US",
+      "genre": "Pop",
+      "country": "US",
+      "itunes": 45435761,
+      "velocity": 0.2857142857142857,
+      "pre_rank": 1,
+      "peak_rank": 1,
+      "peak_date": "2022-12-15T00:00:00.000Z",
+      "time_on_chart": 56,
+      "rankStats": [
+        {
+          "rank": 4,
+          "timestp": "2022-12-25T00:00:00.000Z"
+        },
+        {
+          "rank": 4,
+          "timestp": "2022-12-26T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-27T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-28T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-29T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-30T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-31T00:00:00.000Z"
+        },
+        {
+          "rank": 2,
+          "timestp": "2023-01-01T00:00:00.000Z"
+        }
+      ]
+    }
+  ]
 }
