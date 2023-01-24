@@ -1,6 +1,13 @@
 import Card from './Card.js'
+import React, { useState } from 'react'
 
 function Home({ rawData }) {
+  const [displayGenre, setDisplayGenre] = useState(false)
+
+  function displayArtists() {
+    setDisplayGenre(prev => !prev)
+  }
+
   const handleArtistClicked = (id) => {
     const myData = (rawData.find(item => item.id === id))
     fetch("http://localhost:7001/artists", {
@@ -25,10 +32,9 @@ function Home({ rawData }) {
       />
     ))
     
-    
   return(
     <div className="container">
-      {displayItems}
+      {displayGenre ? displayItems : <img className="genreArt" onClick={displayArtists} src={"https://miro.medium.com/max/1104/1*UFvb-4a9eNkh75SPAcUnHQ.webp"}/>}
     </div>
   )
 }

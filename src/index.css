@@ -59,6 +59,11 @@ div .mainArea {
   font-size: 20px;
 }
 
+.genreArt {
+  width: 200px;
+  padding: 20px;
+}
+
 .coverArt {
   width: 150px;
 }
