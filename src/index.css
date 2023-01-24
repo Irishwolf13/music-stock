@@ -10,6 +10,11 @@
 }
 .cardButton {
   position: absolute;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #1ed760;
 }
 div .titleBar {
   width: 100%;
@@ -68,5 +73,5 @@ div .mainArea {
   background-color: #ffffff;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 0 0.5rem crimson;
+  box-shadow: 0 0 0.5rem #1ed760;
 }

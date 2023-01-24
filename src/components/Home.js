@@ -17,6 +17,7 @@ function Home({ rawData, handleArtistClicked }) {
       artistName={item.artist_names[0]}
       id={item.id} 
       genre={item.genre}
+      preview={item.preview_url}
       image_url={item.image_url}
       // rawData={rawData}
       handleArtistClicked={handleArtistClicked}
