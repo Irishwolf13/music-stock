@@ -8,6 +8,7 @@ import NavBar from "./NavBar.js"
 
 function App() {
   const [rawData, setRawData] = useState([]);
+
   useEffect(() => {
     fetch('http://localhost:8001/artists')
     .then(res => res.json())
@@ -27,7 +28,7 @@ function App() {
         <Routes>
             <Route path="/search" element={<Search />}></Route>
             <Route path="/portfolio" element={<Portfolio />}></Route>
-            <Route path="/" element={<Home rawData={ rawData }/>}></Route>
+            <Route path="/" element={<Home rawData={ rawData } />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </div>

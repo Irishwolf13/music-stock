@@ -1,12 +1,5 @@
 {
-    "artists": [
-        {
-            "id": 1,
-            "name": "User",
-            "score": "1000",
-            "recordLabel":{
-
-            }
-        }
-    ]
+  "artists": [
+    
+  ]
 }
