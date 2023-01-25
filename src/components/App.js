@@ -22,7 +22,7 @@ function App() {
     setSearch(e.target.value)
   } 
 
-  const handleArtistClicked = (id) => {
+  const handleArtistClicked = (e, id) => {
     const myData = (rawData.find(item => item.id === id))
     fetch("http://localhost:7001/artists", {
       method: "POST",
@@ -31,15 +31,17 @@ function App() {
       },
       body: JSON.stringify(myData)
     })
-    .then(res => res.json())                        
-    .then(returnData => console.log(returnData)) 
+    //.then(res => res.json())                        
+    //.then(returnData => console.log(returnData))
   }
 
   return (
     <div className="mainContainer">
+      <div className="titleBar2"></div>
       <img className="stockifyLogo"alt="timer" src={logo} />
       <div className="titleBar"></div>
       <div className="mainArea">
+        <div className="sideBar2"></div>
         <div className="sideBar">
           <NavBar />
         </div>

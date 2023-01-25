@@ -1,5 +1,26 @@
+body {
+  background-color: black;
+}
 .mainHeader {
+  padding-left: 20px;
+  padding-top: 10px;
+  color: white;
+  position: fixed;
+  width: 80%;
+  top: 95px;
+  z-index: 110;
+  background-color: black;
+}
+.mainHeader2 {
   margin-left: 20px;
+}
+.grade {
+  min-height: 170px;
+  width: 81%;
+  position: fixed;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  z-index: 100;
+  top: 160px;
 }
 .albumName {
   max-width: 200px;
@@ -13,22 +34,74 @@
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   border-color: #1ed760;
+  background-color: #1ed760;
+  top: 170px;
+  left: 2px;
 }
+.cardButton:hover{
+  background-color: #905900;
+}
+.cardButton:active{
+  background-color: #ff3300;
+}
+
 div .titleBar {
   width: 100%;
   min-height: 100px;
   background-color: rgb(0, 0, 0);
+}
+div .titleBar2 {
+  width: 98.8%;
+  min-height: 130px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 99;
+  top: -10px
+}
+.searchContainer {
+  text-align: left;
+}
+.search-name {
+  font-size: 20px;
+  margin-left: 30px;
+  width: 400px;
+  height: 20px;
+  margin-bottom: 30px;
+}
+.searchButton {
+  font-size: 20px;
+  height: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.searchButton:hover{
+  background-color: #1ed760;
+}
+.searchButton:active{
+  background-color: #ff3300;
 }
 
 .stockifyLogo {
   max-height: 100px;
   position: absolute;
   left: 200px;
+  z-index: 100;
+  position: fixed;
 }
 
 div .sideBar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  min-width: 250px;
+  min-height: 500px;
+  position: fixed;
+  z-index: 110;
+}
+div .sideBar2 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -42,19 +115,40 @@ div .mainArea {
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
-
-.mainContainer {
-  background-color: black;
+.previewButton {
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1ed760;
+  top: 175px;
+  right: 2px;
 }
-
+.previewButton:hover{
+  background-color: #1ed760;
+}
+.previewButton:active{
+  background-color: #ff3300;
+}
 .navLink{
   display: flex;
   font-size: 20px;
+  color: #1ED760;
+  text-decoration: none;
+  padding: 20px;
+}
+.navLink:hover{
+  background-color: #905900;
+}
+.navLink:active {
+  background-color: #ff3300;
 }
 
 .genreArt {
   width: 200px;
   padding: 20px;
+  z-index: 101;
 }
 
 .coverArt {
@@ -70,8 +164,20 @@ div .mainArea {
 .cardContainer {
   position: relative;
   margin: 10px;
-  background-color: #ffffff;
+  background-color: #00210b;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 0 0.5rem #1ed760;
+  color: white;
+  padding-left: 5px;
+}
+.profileContainer{
+  position: relative;
+  margin: 10px;
+  background-color: #987501;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 0.5rem #ff9d00;
+  color: white;
+  padding-left: 5px;
 }

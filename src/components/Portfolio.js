@@ -26,12 +26,16 @@ function Portfolio() {
       key={item.id}
       id={item.id} 
       genre={item.genre}
+      trackName={item.name}
+      artistName={item.artist_names[0]}
+      preview={item.preview_url}
       image_url={item.image_url}
+      popularity={item.spotify_popularity}
       handleDelete={handleDelete}
     />
   ))
   return(
-    <div>{displayItems}</div>
+    <div className="container">{displayItems}</div>
   )
 }
 

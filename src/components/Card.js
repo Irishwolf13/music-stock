@@ -1,6 +1,6 @@
-function Card({preview, artistName, trackName, image_url, id, handleArtistClicked}) {
+function Card({popularity, preview, artistName, trackName, image_url, id, handleArtistClicked}) {
   const myPreview = new Audio(preview)
-  let playStop = "Play"
+  let playStop = "Preview"
   let isPlaying = false
 
   const handlePlayMusic = () => {
@@ -11,19 +11,19 @@ function Card({preview, artistName, trackName, image_url, id, handleArtistClicke
     }else {
       myPreview.pause()
       isPlaying = false
-      playStop = "Play"
+      playStop = "Preview"
     }
   }
 
   return(
     <>
       <div className="cardContainer">
-        <button onClick={(e) => handleArtistClicked(id)} className="cardButton">Buy</button>
-        <button onClick={handlePlayMusic}>{ playStop } </button>
-        <img className="coverArt" src={image_url} ></img>
+        <button className="cardButton" onClick={(e) => handleArtistClicked(e, id)} >Buy</button>
+        <button className="previewButton" onClick={handlePlayMusic}>{ playStop } </button>
+        <img className="coverArt" src={image_url}></img>
         <div className="artistName">{artistName}</div>
         <div className="albumName">{trackName}</div>
-        <div>frank</div>
+        <div>Popularity: {popularity}</div>
       </div>
     </>
   )

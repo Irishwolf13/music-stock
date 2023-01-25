@@ -1,3 +1,266 @@
 {
-  "artists": []
+  "artists": [
+    {
+      "id": 42674454,
+      "name": "About Damn Time",
+      "isrc": "USAT22202139",
+      "itunes_album_id": [
+        "1619161952"
+      ],
+      "itunes_track_id": "1619162353",
+      "composer_name": "Blake Slatkin, Eric Frederic, Larry Price, Malcolm McLaren, Melissa Jefferson, Ronald Larkins, Stephen Hague, Theron Makiel Thomas",
+      "image_url": "https://i.scdn.co/image/ab67616d0000b2734891122c2983dc1bbca9aa54",
+      "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/81/e6/0a/81e60a84-3e94-7af1-7907-a07f3ae09a24/mzaf_5134479995596811902.plus.aac.p.m4a",
+      "cm_track": 79572011,
+      "track_genre": "Pop,Music",
+      "cm_artist": [
+        210712
+      ],
+      "artist_names": [
+        "Lizzo"
+      ],
+      "code2s": [
+        "US"
+      ],
+      "artist_images": [
+        null
+      ],
+      "artist_covers": [
+        null
+      ],
+      "itunes_artist_ids": [
+        472949623
+      ],
+      "itunes_artist_names": [
+        "Lizzo"
+      ],
+      "itunes_track_ids": [
+        "1619162353"
+      ],
+      "itunes_album_ids": [
+        "1619161952"
+      ],
+      "storefronts": [
+        "US"
+      ],
+      "album_ids": [
+        20601816
+      ],
+      "album_names": [
+        "About Damn Time"
+      ],
+      "album_upc": [
+        "075679752888"
+      ],
+      "album_label": [
+        "Nice Life/Atlantic"
+      ],
+      "release_dates": [
+        "2022-04-14T00:00:00.000Z"
+      ],
+      "duration_ms": 191937,
+      "explicit": true,
+      "score": 0.253269917017,
+      "album": [
+        {
+          "release_date": "2022-04-14",
+          "name": "About Damn Time",
+          "upc": "075679752888",
+          "id": 20601816,
+          "label": "Nice Life/Atlantic"
+        }
+      ],
+      "songwriter": [
+        "Blake Slatkin",
+        "Eric Frederic",
+        "Larry Price",
+        "Malcolm McLaren",
+        "Melissa Jefferson",
+        "Ronald Larkins",
+        "Stephen Hague",
+        "Theron Makiel Thomas"
+      ],
+      "spotify_popularity": 86,
+      "artists": [
+        {
+          "code2": "US",
+          "name": "Lizzo",
+          "id": 210712
+        }
+      ],
+      "rank": 6,
+      "added_at": "2023-01-01T00:00:00.000Z",
+      "code2": "US",
+      "genre": "Pop",
+      "country": "US",
+      "itunes": 42674454,
+      "velocity": 3.142857142857143,
+      "pre_rank": 10,
+      "peak_rank": 2,
+      "peak_date": "2022-05-04T00:00:00.000Z",
+      "time_on_chart": 281,
+      "rankStats": [
+        {
+          "rank": 28,
+          "timestp": "2022-12-25T00:00:00.000Z"
+        },
+        {
+          "rank": 32,
+          "timestp": "2022-12-26T00:00:00.000Z"
+        },
+        {
+          "rank": 20,
+          "timestp": "2022-12-27T00:00:00.000Z"
+        },
+        {
+          "rank": 17,
+          "timestp": "2022-12-28T00:00:00.000Z"
+        },
+        {
+          "rank": 14,
+          "timestp": "2022-12-29T00:00:00.000Z"
+        },
+        {
+          "rank": 12,
+          "timestp": "2022-12-30T00:00:00.000Z"
+        },
+        {
+          "rank": 10,
+          "timestp": "2022-12-31T00:00:00.000Z"
+        },
+        {
+          "rank": 6,
+          "timestp": "2023-01-01T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 45488470,
+      "name": "Bejeweled",
+      "isrc": "USUG12205715",
+      "itunes_album_id": [
+        "1650841512"
+      ],
+      "itunes_track_id": "1650841735",
+      "composer_name": "Taylor Swift, Jack Antonoff",
+      "image_url": "https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/8b/59/4b/8b594b75-5a1a-9a39-e003-b227d09d5b37/22UM1IM07364.rgb.jpg/160x160bb.jpg",
+      "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/1f/ad/6d/1fad6da7-7952-8e5e-ab22-c03222c362b0/mzaf_3216049994634845436.plus.aac.p.m4a",
+      "cm_track": 94285919,
+      "track_genre": "Pop,Music",
+      "cm_artist": [
+        2762
+      ],
+      "artist_names": [
+        "Taylor Swift"
+      ],
+      "code2s": [
+        "US"
+      ],
+      "artist_images": [
+        null
+      ],
+      "artist_covers": [
+        null
+      ],
+      "itunes_artist_ids": [
+        159260351
+      ],
+      "itunes_artist_names": [
+        "Taylor Swift"
+      ],
+      "itunes_track_ids": [
+        "1650841735"
+      ],
+      "itunes_album_ids": [
+        "1650841512"
+      ],
+      "storefronts": [
+        "US"
+      ],
+      "album_ids": [
+        24400361
+      ],
+      "album_names": [
+        "Midnights"
+      ],
+      "album_upc": [
+        "602448705952"
+      ],
+      "album_label": [
+        "Taylor Swift"
+      ],
+      "release_dates": [
+        "2022-10-21T00:00:00.000Z"
+      ],
+      "duration_ms": 194165,
+      "explicit": false,
+      "score": 0.085873936859,
+      "album": [
+        {
+          "release_date": "2022-10-21",
+          "name": "Midnights",
+          "upc": "602448705952",
+          "id": 24400361,
+          "label": "Taylor Swift"
+        }
+      ],
+      "songwriter": [
+        "Taylor Swift",
+        "Jack Antonoff"
+      ],
+      "spotify_popularity": 80,
+      "artists": [
+        {
+          "code2": "US",
+          "name": "Taylor Swift",
+          "id": 2762
+        }
+      ],
+      "rank": 7,
+      "added_at": "2023-01-01T00:00:00.000Z",
+      "code2": "US",
+      "genre": "Pop",
+      "country": "US",
+      "itunes": 45488470,
+      "velocity": 1.1428571428571428,
+      "pre_rank": 7,
+      "peak_rank": 2,
+      "peak_date": "2022-10-31T00:00:00.000Z",
+      "time_on_chart": 94,
+      "rankStats": [
+        {
+          "rank": 15,
+          "timestp": "2022-12-25T00:00:00.000Z"
+        },
+        {
+          "rank": 16,
+          "timestp": "2022-12-26T00:00:00.000Z"
+        },
+        {
+          "rank": 8,
+          "timestp": "2022-12-27T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2022-12-28T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2022-12-29T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2022-12-30T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2022-12-31T00:00:00.000Z"
+        },
+        {
+          "rank": 7,
+          "timestp": "2023-01-01T00:00:00.000Z"
+        }
+      ]
+    }
+  ]
 }
