@@ -36,8 +36,8 @@ body {
   border-style: solid;
   border-width: 2px;
   border-color: #1ed760;
-  background-color: #1ed760;
-  top: 170px;
+  background-color: #ffffff;
+  top: 200px;
   left: 2px;
 }
 .cardButton:hover{
@@ -121,12 +121,12 @@ div .mainArea {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-style: solid;
   border-width: 2px;
-  border-color: #1ed760;
-  top: 175px;
+  border-color: #1ED760;
+  top: 205px;
   right: 2px;
 }
 .previewButton:hover{
-  background-color: #1ed760;
+  background-color: #905900;
 }
 .previewButton:active{
   background-color: #ff3300;
@@ -179,5 +179,14 @@ div .mainArea {
   border-bottom-right-radius: 20px;
   box-shadow: 0 0 0.5rem #ff9d00;
   color: white;
+  padding-left: 5px;
+}
+.infoContainer {  
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5rem #ff9d00;
+  color: rgb(0, 0, 0);
   padding-left: 5px;
 }

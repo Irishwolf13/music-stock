@@ -5,10 +5,12 @@ import Search from "./Search.js"
 import Portfolio from "./Portfolio.js"
 import NotFound from "./NotFound.js"
 import NavBar from "./NavBar.js"
+import DisplayPage from "./DisplayPage.js"
 import logo from "./stockify.png"
 
 function App() {
   const [rawData, setRawData] = useState([]);
+  const [currentSong, setCurrentSong] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:8001/artists')
@@ -31,10 +33,11 @@ function App() {
       },
       body: JSON.stringify(myData)
     })
-    //.then(res => res.json())                        
-    //.then(returnData => console.log(returnData))
   }
-
+  const handleMoreInfo = (id) => {
+    const mySong = (rawData.find(item => item.id === id))
+    setCurrentSong(mySong)
+  }
   return (
     <div className="mainContainer">
       <div className="titleBar2"></div>
@@ -58,10 +61,16 @@ function App() {
             </Route>
             <Route path="/portfolio" element={<Portfolio />}></Route>
             <Route 
+              path="/displayPage" 
+              element={<DisplayPage />}
+              currentSong={currentSong}
+            ></Route>
+            <Route 
               path="/" 
               element={<Home 
                 rawData={ rawData } 
                 handleArtistClicked={handleArtistClicked}
+                handleMoreInfo={handleMoreInfo}
               />}>
             </Route>
             <Route path="*" element={<NotFound />}></Route>

@@ -1,7 +1,7 @@
 import Card from './Card.js'
 import React, { useState } from 'react'
 
-function Home({ rawData, handleArtistClicked }) {
+function Home({ rawData, handleArtistClicked, handleMoreInfo }) {
   const [displayGenre, setDisplayGenre] = useState(false)
   const [titleText, setTitleText] = useState('Genres')
 
@@ -21,6 +21,7 @@ function Home({ rawData, handleArtistClicked }) {
       image_url={item.image_url}
       popularity={item.spotify_popularity}
       handleArtistClicked={handleArtistClicked}
+      handleMoreInfo={handleMoreInfo}
     />
   ))
     
