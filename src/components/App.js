@@ -11,13 +11,16 @@ import logo from "./stockify.png"
 function App() {
   const [rawData, setRawData] = useState([]);
   const [currentSong, setCurrentSong] = useState([]);
+  const [myMoney, setMyMoney] = useState(0);
 
   useEffect(() => {
     fetch('http://localhost:8001/artists')
     .then(res => res.json())
     .then(Data => setRawData(Data))
+    fetch('http://localhost:7001/users/1')
+    .then(res => res.json())
+    .then(Data => handleSetMoney(Data.money))
 },[])
-
   const [search, setSearch] = useState('')
   const filterRawData = rawData.filter(item => item.artist_names[0].toLowerCase().includes(search.toLowerCase()))
   const handleSearch = (e) => {
@@ -33,6 +36,26 @@ function App() {
       },
       body: JSON.stringify(myData)
     })
+    handleMoney(myData.spotify_popularity)
+  }
+  const handleMoney = (costOfArtist) => {
+    fetch("http://localhost:7001/users/1")
+    .then(res => res.json())
+    .then(returnData => {
+      console.log(returnData.money)
+      console.log(costOfArtist)
+      const moneyRemaining = returnData.money - costOfArtist
+      fetch("http://localhost:7001/users/1", {
+        method: "PATCH",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({money: moneyRemaining})
+      })
+      .then(res => res.json())
+      .then(returnData => handleSetMoney(moneyRemaining))      
+    })
+  }
+  const handleSetMoney = (money) => {
+    setMyMoney(money)
   }
   const handleMoreInfo = (id) => {
     const mySong = (rawData.find(item => item.id === id))
@@ -59,7 +82,7 @@ function App() {
                 handleArtistClicked={handleArtistClicked}
               />}>
             </Route>
-            <Route path="/portfolio" element={<Portfolio />}></Route>
+            <Route path="/portfolio" element={<Portfolio rawData={rawData}/>}></Route>
             <Route 
               path="/displayPage" 
               element={<DisplayPage currentSong={currentSong}/>}
