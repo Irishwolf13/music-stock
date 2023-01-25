@@ -42,16 +42,13 @@ function App() {
     fetch("http://localhost:7001/users/1")
     .then(res => res.json())
     .then(returnData => {
-      console.log(returnData.money)
-      console.log(costOfArtist)
       const moneyRemaining = returnData.money - costOfArtist
       fetch("http://localhost:7001/users/1", {
         method: "PATCH",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({money: moneyRemaining})
       })
-      .then(res => res.json())
-      .then(returnData => handleSetMoney(moneyRemaining))      
+      .then(handleSetMoney(moneyRemaining))      
     })
   }
   const handleSetMoney = (money) => {
@@ -62,7 +59,6 @@ function App() {
     setCurrentSong(mySong)
   }
 
-  
   return (
     <div className="mainContainer">
       <div className="titleBar2"></div>
@@ -71,7 +67,7 @@ function App() {
       <div className="mainArea">
         <div className="sideBar2"></div>
         <div className="sideBar">
-          <NavBar />
+          <NavBar myMoney={myMoney}/>
         </div>
         <div>
         <Routes>
@@ -84,7 +80,7 @@ function App() {
                 handleArtistClicked={handleArtistClicked}
               />}>
             </Route>
-            <Route path="/portfolio" element={<Portfolio rawData={rawData}/>}></Route>
+            <Route path="/portfolio" element={<Portfolio rawData={rawData} handleSetMoney={handleSetMoney}/>}></Route>
             <Route 
               path="/displayPage" 
               element={<DisplayPage currentSong={currentSong}/>}

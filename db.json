@@ -1,4 +1,13 @@
 {
+    "users": [
+        {
+          "id": 1,
+          "money": 1000,
+          "recordLable": [
+            
+          ]
+        }
+      ],
     "artists": [
         {
             "id": 43528456,

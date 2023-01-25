@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioCard from './PortfolioCard.js'
 
-function Portfolio({ rawData }) {
+function Portfolio({ rawData, handleSetMoney }) {
 
   const [portfolio, setPortfolio] = useState([])
   useEffect(() => {
@@ -26,16 +26,13 @@ function Portfolio({ rawData }) {
     fetch("http://localhost:7001/users/1")
     .then(res => res.json())
     .then(returnData => {
-      // console.log(returnData.money)
-      // console.log(costOfArtist)
       const moneyRemaining = returnData.money + costOfArtist
       fetch("http://localhost:7001/users/1", {
         method: "PATCH",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({money: moneyRemaining})
       })
-      // .then(res => res.json())
-      // .then(returnData => console.log(returnData))      
+      .then(handleSetMoney(moneyRemaining))      
     })
   }
 
