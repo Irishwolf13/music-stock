@@ -5,14 +5,14 @@ function Portfolio({ rawData, handleSetMoney }) {
 
   const [portfolio, setPortfolio] = useState([])
   useEffect(() => {
-    fetch('http://localhost:7001/artists')
+    fetch('http://localhost:8001/recordLable')
     .then(res => res.json())
     .then(Data => setPortfolio(Data))
   },[])
 
   const handleDelete = (id) => {
     const myData = (rawData.find(item => item.id === id))
-    fetch(`http://localhost:7001/artists/${id}`, {
+    fetch(`http://localhost:8001/recordLable/${id}`, {
       method: "DELETE",
       headers: {
           'Content-Type': 'application/json'
@@ -23,11 +23,11 @@ function Portfolio({ rawData, handleSetMoney }) {
     handleSellMoney(myData.spotify_popularity)
   }
   const handleSellMoney = (costOfArtist) => {
-    fetch("http://localhost:7001/users/1")
+    fetch("http://localhost:8001/users/1")
     .then(res => res.json())
     .then(returnData => {
       const moneyRemaining = returnData.money + costOfArtist
-      fetch("http://localhost:7001/users/1", {
+      fetch("http://localhost:8001/users/1", {
         method: "PATCH",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({money: moneyRemaining})

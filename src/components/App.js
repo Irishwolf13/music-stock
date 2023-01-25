@@ -17,7 +17,7 @@ function App() {
     fetch('http://localhost:8001/artists')
     .then(res => res.json())
     .then(Data => setRawData(Data))
-    fetch('http://localhost:7001/users/1')
+    fetch('http://localhost:8001/users/1')
     .then(res => res.json())
     .then(Data => handleSetMoney(Data.money))
 },[])
@@ -29,7 +29,7 @@ function App() {
 
   const handleArtistClicked = (e, id) => {
     const myData = (rawData.find(item => item.id === id))
-    fetch("http://localhost:7001/artists", {
+    fetch("http://localhost:8001/recordLable", {
       method: "POST",
       headers: {
           'Content-Type': 'application/json'
@@ -39,11 +39,11 @@ function App() {
     handleMoney(myData.spotify_popularity)
   }
   const handleMoney = (costOfArtist) => {
-    fetch("http://localhost:7001/users/1")
+    fetch("http://localhost:8001/users/1")
     .then(res => res.json())
     .then(returnData => {
       const moneyRemaining = returnData.money - costOfArtist
-      fetch("http://localhost:7001/users/1", {
+      fetch("http://localhost:8001/users/1", {
         method: "PATCH",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({money: moneyRemaining})
@@ -81,10 +81,7 @@ function App() {
               />}>
             </Route>
             <Route path="/portfolio" element={<Portfolio rawData={rawData} handleSetMoney={handleSetMoney}/>}></Route>
-            <Route 
-              path="/displayPage" 
-              element={<DisplayPage currentSong={currentSong}/>}
-            ></Route>
+            <Route path="/displayPage" element={<DisplayPage currentSong={currentSong}/>}></Route>
             <Route 
               path="/" 
               element={<Home 
