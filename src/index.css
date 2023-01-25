@@ -182,11 +182,22 @@ div .mainArea {
   padding-left: 5px;
 }
 .infoContainer {  
+  right: 25px;
+  width: 450px;
+  background-color: #0c0c0c;
+  box-shadow: 0 0 0.5rem #ff9d00;
+  color: #1ED760;
+  padding-left: 5px;
+}
+
+.displayArt {
+  width: 300px;
+}
+
+.displayArtistNames {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
-  background-color: #ffffff;
-  box-shadow: 0 0 0.5rem #ff9d00;
-  color: rgb(0, 0, 0);
-  padding-left: 5px;
+}
+.displayArtistNames div {
+  margin-left: 10px;
 }
