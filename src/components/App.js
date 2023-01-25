@@ -38,6 +38,8 @@ function App() {
     const mySong = (rawData.find(item => item.id === id))
     setCurrentSong(mySong)
   }
+
+  
   return (
     <div className="mainContainer">
       <div className="titleBar2"></div>
