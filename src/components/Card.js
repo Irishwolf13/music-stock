@@ -25,7 +25,7 @@ function Card({handleMoreInfo, popularity, preview, artistName, trackName, image
         <NavLink className="navLink" to="/DisplayPage" onClick={(e) => handleMoreInfo(id)}><img className="coverArt" src={image_url}></img></NavLink>
         <div className="artistName">{artistName}</div>
         <div className="albumName">{trackName}</div>
-        <div>Popularity: {popularity}</div>
+        <div>Price / Popularity: {popularity}</div>
       </div>
     </>
   )

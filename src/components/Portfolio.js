@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioCard from './PortfolioCard.js'
 
-function Portfolio() {
+function Portfolio({ rawData }) {
 
   const [portfolio, setPortfolio] = useState([])
   useEffect(() => {
@@ -11,6 +11,7 @@ function Portfolio() {
   },[])
 
   const handleDelete = (id) => {
+    const myData = (rawData.find(item => item.id === id))
     fetch(`http://localhost:7001/artists/${id}`, {
       method: "DELETE",
       headers: {
@@ -18,7 +19,24 @@ function Portfolio() {
       },
     })
     .then(res => res.json())                        
-    .then(returnData => setPortfolio(portfolio.filter(item => item.id !== id))) 
+    .then(returnData => setPortfolio(portfolio.filter(item => item.id !== id)))
+    handleSellMoney(myData.spotify_popularity)
+  }
+  const handleSellMoney = (costOfArtist) => {
+    fetch("http://localhost:7001/users/1")
+    .then(res => res.json())
+    .then(returnData => {
+      // console.log(returnData.money)
+      // console.log(costOfArtist)
+      const moneyRemaining = returnData.money + costOfArtist
+      fetch("http://localhost:7001/users/1", {
+        method: "PATCH",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({money: moneyRemaining})
+      })
+      // .then(res => res.json())
+      // .then(returnData => console.log(returnData))      
+    })
   }
 
   const displayItems = portfolio.map(item => (
