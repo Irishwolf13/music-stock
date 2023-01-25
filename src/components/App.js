@@ -62,8 +62,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />}></Route>
             <Route 
               path="/displayPage" 
-              element={<DisplayPage />}
-              currentSong={currentSong}
+              element={<DisplayPage currentSong={currentSong}/>}
             ></Route>
             <Route 
               path="/" 
