@@ -89,6 +89,7 @@ function App() {
                 rawData={ rawData } 
                 handleArtistClicked={handleArtistClicked}
                 handleMoreInfo={handleMoreInfo}
+                myMoney={myMoney}
               />}>
             </Route>
             <Route path="*" element={<NotFound />}></Route>

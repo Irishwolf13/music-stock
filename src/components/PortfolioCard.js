@@ -23,7 +23,7 @@ function PortfolioCard({popularity, preview, artistName, trackName, image_url, i
         <img className="coverArt" src={image_url}></img>
         <div className="artistName">{artistName}</div>
         <div className="albumName">{trackName}</div>
-        <div>Popularity: {popularity}</div>
+        <div>Sell Price: ${popularity}</div>
       </div>
     </>
   )
