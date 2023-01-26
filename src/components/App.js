@@ -78,6 +78,7 @@ function App() {
                 handleSearch={handleSearch} 
                 rawData={ filterRawData } 
                 handleArtistClicked={handleArtistClicked}
+                handleMoreInfo={handleMoreInfo}
               />}>
             </Route>
             <Route path="/portfolio" element={<Portfolio rawData={rawData} handleSetMoney={handleSetMoney}/>}></Route>
