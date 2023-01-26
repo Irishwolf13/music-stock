@@ -11,7 +11,7 @@ function NavBar(myMoney) {
       
       <div className='myMoney'>
         <div className="textFunds">Funds</div>
-        <div className="textFunds">{myMoney.myMoney}</div>
+        <div className="textFunds">$ {myMoney.myMoney}</div>
       </div>
     </nav>
   )
