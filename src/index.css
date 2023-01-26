@@ -188,17 +188,21 @@ div .mainArea {
   color: white;
   padding-left: 5px;
 }
-.infoContainer {  
-  right: 25px;
+.infoContainer {
+  margin-top: 20px;  
   width: 450px;
   background-color: #0c0c0c;
-  box-shadow: 0 0 0.5rem #ff9d00;
+  border-color: #1ED760;
+  border-style: solid;
+  /* box-shadow: 0 0 0.5rem #ff9d00; */
   color: #1ED760;
   padding-left: 5px;
 }
 
 .displayArt {
   width: 300px;
+  margin-top: 5px;
+  margin-left: 70px;
 }
 
 .displayArtistNames {
