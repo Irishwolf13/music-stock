@@ -18,8 +18,8 @@ function PortfolioCard({popularity, preview, artistName, trackName, image_url, i
   return(
     <>
       <div className="profileContainer">
-        <button className="cardButton" onClick={() => handleDelete(id)}> Sell </button>
-        <button className="previewButton" onClick={handlePlayMusic}>{ playStop } </button>
+        <button className="proCardButton" onClick={() => handleDelete(id)}> Sell </button>
+        <button className="proPreviewButton" onClick={handlePlayMusic}>{ playStop } </button>
         <img className="coverArt" src={image_url}></img>
         <div className="artistName">{artistName}</div>
         <div className="albumName">{trackName}</div>

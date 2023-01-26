@@ -27,7 +27,7 @@ function App() {
     setSearch(e.target.value)
   } 
 
-  const handleArtistClicked = (e, id) => {
+  const handleArtistClicked = (id) => {
     const myData = (rawData.find(item => item.id === id))
     fetch("http://localhost:8001/recordLable", {
       method: "POST",

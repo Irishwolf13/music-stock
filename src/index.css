@@ -37,6 +37,7 @@ body {
   font-size: 20px;
 }
 .cardButton {
+  height: 30px;
   position: absolute;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -51,6 +52,24 @@ body {
   background-color: #905900;
 }
 .cardButton:active{
+  background-color: #ff3300;
+}
+
+.proCardButton {
+  position: absolute;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1ed760;
+  background-color: #ffffff;
+  top: 200px;
+  left: 2px;
+}
+.proCardButton:hover{
+  background-color: #905900;
+}
+.proCardButton:active{
   background-color: #ff3300;
 }
 
@@ -123,13 +142,14 @@ div .mainArea {
   background-color: rgb(0, 0, 0);
 }
 .previewButton {
+  height: 30px;
   position: absolute;
   font-size: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-style: solid;
   border-width: 2px;
   border-color: #1ED760;
-  top: 205px;
+  top: 200px;
   right: 2px;
 }
 .previewButton:hover{
@@ -138,6 +158,25 @@ div .mainArea {
 .previewButton:active{
   background-color: #ff3300;
 }
+
+.proPreviewButton {
+  height: 30px;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1ED760;
+  top: 200px;
+  right: 2px;
+}
+.proPreviewButton:hover{
+  background-color: #905900;
+}
+.proPreviewButton:active{
+  background-color: #ff3300;
+}
+
 .navLink{
   display: flex;
   font-size: 20px;
@@ -181,6 +220,9 @@ div .mainArea {
 .profileContainer{
   position: relative;
   margin: 10px;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 5px; 
   background-color: #987501;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 20px;
