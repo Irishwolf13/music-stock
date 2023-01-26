@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from "react-router-dom"
 
-function Card({handleMoreInfo, popularity, preview, artistName, trackName, image_url, id, handleArtistClicked}) {
+function Card({myMoney, handleMoreInfo, popularity, preview, artistName, trackName, image_url, id, handleArtistClicked}) {
   const [owned, setOwned] = useState('Buy')
   const myPreview = new Audio(preview)
   let playStop = "Preview"
@@ -19,9 +19,13 @@ function Card({handleMoreInfo, popularity, preview, artistName, trackName, image
     }
   }
   const handleClicked = () => {
-    if(owned === 'Buy') {
-      handleArtistClicked(id)
-      setOwned('Owned')
+    if(myMoney > popularity) {
+      if(owned === 'Buy') {
+        handleArtistClicked(id)
+        setOwned('Owned')
+      }
+    } else{
+      alert(`You only have $ ${myMoney}, which is sadly less than $ ${popularity}`)
     }
   }
   return(
@@ -32,7 +36,7 @@ function Card({handleMoreInfo, popularity, preview, artistName, trackName, image
         <NavLink className="navLink" to="/DisplayPage" onClick={(e) => handleMoreInfo(id)}><img className="coverArt" src={image_url}></img></NavLink>
         <div className="artistName">{artistName}</div>
         <div className="albumName">{trackName}</div>
-        <div>Price / Popularity: {popularity}</div>
+        <div>Price: ${popularity}</div>
       </div>
     </>
   )
