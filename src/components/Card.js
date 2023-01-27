@@ -6,7 +6,10 @@ function Card({myMoney, handleMoreInfo, popularity, preview, artistName, trackNa
   const myPreview = new Audio(preview)
   let playStop = "Preview"
   let isPlaying = false
-
+  if(popularity === undefined) {
+    popularity = 50;
+    console.log("money", myMoney)
+  }
   const handlePlayMusic = () => {
     if (isPlaying === false) {
       myPreview.play()

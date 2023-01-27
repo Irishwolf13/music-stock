@@ -16,13 +16,15 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:8001/artists')
     .then(res => res.json())
-    .then(Data => setRawData(Data))
+    .then(Data => {setRawData(Data)})
     fetch('http://localhost:8001/users/1')
     .then(res => res.json())
     .then(Data => handleSetMoney(Data.money))
 },[])
   const [search, setSearch] = useState('')
-  const filterRawData = rawData.filter(item => item.artist_names[0].toLowerCase().includes(search.toLowerCase()))
+  const filterRawData = rawData.filter(item => {
+    if(item.artist_names[0]) item.artist_names[0].toLowerCase().includes(search.toLowerCase())
+  })
   const handleSearch = (e) => {
     setSearch(e.target.value)
   } 
@@ -79,6 +81,7 @@ function App() {
                 rawData={ filterRawData } 
                 handleArtistClicked={handleArtistClicked}
                 handleMoreInfo={handleMoreInfo}
+                myMoney={myMoney}
               />}>
             </Route>
             <Route path="/portfolio" element={<Portfolio rawData={rawData} handleSetMoney={handleSetMoney}/>}></Route>

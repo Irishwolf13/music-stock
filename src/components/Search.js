@@ -2,7 +2,7 @@
 import React from "react";
 import Card from './Card'
 
-function Search({search, handleSearch, rawData, handleArtistClicked, handleMoreInfo}) {
+function Search({myMoney, search, handleSearch, rawData, handleArtistClicked, handleMoreInfo}) {
 
   const displayItems = rawData.map(item => (
     <Card
@@ -16,6 +16,7 @@ function Search({search, handleSearch, rawData, handleArtistClicked, handleMoreI
       popularity={item.spotify_popularity}
       handleArtistClicked={handleArtistClicked}
       handleMoreInfo={handleMoreInfo}
+      myMoney={myMoney}
   />
   ))
 
