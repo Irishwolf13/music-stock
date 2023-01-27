@@ -5,7 +5,134 @@
       "money": 1000
     }
   ],
-  "recordLable": [],
+  "recordLable": [
+    {
+      "id": 34952869,
+      "name": "Son Of A Sinner",
+      "isrc": "QMRSZ2102227",
+      "itunes_album_id": [
+        "1583960429"
+      ],
+      "itunes_track_id": "1583960434",
+      "composer_name": "Ernest Keith Smith, Jason Deford, David Ray Stevens",
+      "image_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/51/92/ca/5192ca87-598d-0103-b235-fb0dd55fd24c/4050538721386.jpg/160x160bb.jpeg",
+      "preview_url": null,
+      "cm_track": 60385403,
+      "track_genre": "Rock,Music",
+      "cm_artist": [
+        78737
+      ],
+      "artist_names": [
+        "Jelly Roll"
+      ],
+      "code2s": [
+        "US"
+      ],
+      "artist_images": [
+        null
+      ],
+      "artist_covers": [
+        null
+      ],
+      "itunes_artist_ids": [
+        30624911
+      ],
+      "itunes_artist_names": [
+        "Jelly Roll"
+      ],
+      "itunes_track_ids": [
+        "1583960434"
+      ],
+      "itunes_album_ids": [
+        "1583960429"
+      ],
+      "storefronts": [
+        "KH"
+      ],
+      "album_ids": [
+        14516487
+      ],
+      "album_names": [
+        "Ballads of the Broken"
+      ],
+      "album_upc": [
+        "4050538721386"
+      ],
+      "album_label": [
+        "Broken Bow Records"
+      ],
+      "release_dates": [
+        "2021-09-17T00:00:00.000Z"
+      ],
+      "score": 0.00114294089,
+      "album": [
+        {
+          "release_date": "2021-09-17",
+          "name": "Ballads of the Broken",
+          "upc": "4050538721386",
+          "id": 14516487,
+          "label": "Broken Bow Records"
+        }
+      ],
+      "songwriter": [
+        "Ernest Keith Smith",
+        "Jason Deford",
+        "David Ray Stevens"
+      ],
+      "artists": [
+        {
+          "code2": "US",
+          "name": "Jelly Roll",
+          "id": 78737
+        }
+      ],
+      "rank": 1,
+      "added_at": "2023-01-01T00:00:00.000Z",
+      "code2": "US",
+      "genre": "Rock",
+      "country": "US",
+      "itunes": 34952869,
+      "velocity": 0.5714285714285714,
+      "pre_rank": 1,
+      "peak_rank": 1,
+      "peak_date": "2022-10-22T00:00:00.000Z",
+      "time_on_chart": 351,
+      "rankStats": [
+        {
+          "rank": 5,
+          "timestp": "2022-12-25T00:00:00.000Z"
+        },
+        {
+          "rank": 5,
+          "timestp": "2022-12-26T00:00:00.000Z"
+        },
+        {
+          "rank": 4,
+          "timestp": "2022-12-27T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-28T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-29T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-30T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2022-12-31T00:00:00.000Z"
+        },
+        {
+          "rank": 1,
+          "timestp": "2023-01-01T00:00:00.000Z"
+        }
+      ]
+    }
+  ],
   "artists": [
     {
       "id": 43528456,
@@ -109,7 +236,7 @@
       "rank": 1,
       "added_at": "2023-01-01T00:00:00.000Z",
       "code2": "US",
-      "genre": "Rock",
+      "genre": "Pop",
       "country": "US",
       "itunes": 43528456,
       "velocity": 1,

@@ -11,7 +11,7 @@ function Search({myMoney, search, handleSearch, rawData, handleArtistClicked, ha
       artistName={item.artist_names[0]}
       id={item.id} 
       genre={item.genre}
-      preview={item.preview_url}
+      // preview={item.preview_url}
       image_url={item.image_url}
       popularity={item.spotify_popularity}
       handleArtistClicked={handleArtistClicked}
