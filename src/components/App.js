@@ -12,19 +12,22 @@ function App() {
   const [rawData, setRawData] = useState([]);
   const [currentSong, setCurrentSong] = useState([]);
   const [myMoney, setMyMoney] = useState(0);
+  const [displayGenre, setDisplayGenre] = useState(false)
+
+  const handleSetDisplay= (myChange) => {
+    setDisplayGenre(myChange)
+  }
 
   useEffect(() => {
     fetch('http://localhost:8001/artists')
     .then(res => res.json())
-    .then(Data => {setRawData(Data)})
+    .then(Data => setRawData(Data))
     fetch('http://localhost:8001/users/1')
     .then(res => res.json())
     .then(Data => handleSetMoney(Data.money))
 },[])
   const [search, setSearch] = useState('')
-  const filterRawData = rawData.filter(item => {
-    if(item.artist_names[0]) item.artist_names[0].toLowerCase().includes(search.toLowerCase())
-  })
+  const filterRawData = rawData.filter(item => item.artists[0].name.toLowerCase().includes(search.toLowerCase()))
   const handleSearch = (e) => {
     setSearch(e.target.value)
   } 
@@ -60,7 +63,7 @@ function App() {
     const mySong = (rawData.find(item => item.id === id))
     setCurrentSong(mySong)
   }
-
+  // console.log(myMoney)
   return (
     <div className="mainContainer">
       <div className="titleBar2"></div>
@@ -69,7 +72,7 @@ function App() {
       <div className="mainArea">
         <div className="sideBar2"></div>
         <div className="sideBar">
-          <NavBar myMoney={myMoney}/>
+          <NavBar myMoney={myMoney} handleSetDisplay={handleSetDisplay}/>
         </div>
         <div>
         <Routes>
@@ -93,6 +96,8 @@ function App() {
                 handleArtistClicked={handleArtistClicked}
                 handleMoreInfo={handleMoreInfo}
                 myMoney={myMoney}
+                handleSetDisplay={handleSetDisplay}
+                displayGenre={displayGenre}
               />}>
             </Route>
             <Route path="*" element={<NotFound />}></Route>

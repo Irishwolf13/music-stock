@@ -1,7 +1,7 @@
 import React from 'react';
 
 function DisplayPage({ currentSong }) {
-  console.log(currentSong.artist_names)
+  
   let artistNames = ''
   let releaseDate = ''
   if (currentSong.artist_names !== undefined) {
